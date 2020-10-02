@@ -26,40 +26,60 @@ const EmailStruct_AST: ADL.ScopedDecl =
 {
   "moduleName": "api",
   "decl": {
-    "annotations": [], "type_": {
+    "annotations": [],
+    "type_": {
       "kind": "struct_",
       "value": {
-        "typeParams": [], "fields": [{
-          "annotations": [], "serializedName": "userid",
-          "default": { "kind": "nothing" }, "name": "userid",
+        "typeParams": [],
+        "fields": [{
+          "annotations": [],
+          "serializedName": "userid",
+          "default": {
+            "kind": "nothing"
+          },
+          "name": "userid",
           "typeExpr": {
             "typeRef": {
               "kind": "primitive",
               "value": "String"
-            }, "parameters": []
+            },
+            "parameters": []
           }
         }, {
-          "annotations": [], "serializedName": "org",
-          "default": { "kind": "nothing" }, "name": "org",
+          "annotations": [],
+          "serializedName": "org",
+          "default": {
+            "kind": "nothing"
+          },
+          "name": "org",
           "typeExpr": {
             "typeRef": {
               "kind": "primitive",
               "value": "String"
-            }, "parameters": []
+            },
+            "parameters": []
           }
         }, {
-          "annotations": [], "serializedName": "full",
-          "default": { "kind": "nothing" }, "name": "full",
+          "annotations": [],
+          "serializedName": "full",
+          "default": {
+            "kind": "nothing"
+          },
+          "name": "full",
           "typeExpr": {
             "typeRef": {
               "kind": "primitive",
               "value": "String"
-            }, "parameters": []
+            },
+            "parameters": []
           }
         }]
       }
-    }, "name": "EmailStruct",
-    "version": { "kind": "nothing" }
+    },
+    "name": "EmailStruct",
+    "version": {
+      "kind": "nothing"
+    }
   }
 };
 
@@ -69,6 +89,7 @@ export function texprEmailStruct(): ADL.ATypeExpr<EmailStruct> {
   return { value: { typeRef: { kind: "reference", value: snEmailStruct }, parameters: [] } };
 }
 
+// tslint:disable-next-line: no-empty-interface
 export interface Empty {
 }
 
@@ -84,11 +105,18 @@ const Empty_AST: ADL.ScopedDecl =
 {
   "moduleName": "api",
   "decl": {
-    "annotations": [], "type_": {
+    "annotations": [],
+    "type_": {
       "kind": "struct_",
-      "value": { "typeParams": [], "fields": [] }
-    }, "name": "Empty",
-    "version": { "kind": "nothing" }
+      "value": {
+        "typeParams": [],
+        "fields": []
+      }
+    },
+    "name": "Empty",
+    "version": {
+      "kind": "nothing"
+    }
   }
 };
 
@@ -128,58 +156,88 @@ const TimeStampInts_AST: ADL.ScopedDecl =
 {
   "moduleName": "api",
   "decl": {
-    "annotations": [], "type_": {
+    "annotations": [],
+    "type_": {
       "kind": "struct_",
       "value": {
-        "typeParams": [], "fields": [{
-          "annotations": [], "serializedName": "hh",
-          "default": { "kind": "nothing" }, "name": "hh",
+        "typeParams": [],
+        "fields": [{
+          "annotations": [],
+          "serializedName": "hh",
+          "default": {
+            "kind": "nothing"
+          },
+          "name": "hh",
           "typeExpr": {
             "typeRef": {
               "kind": "primitive",
               "value": "Int32"
-            }, "parameters": []
+            },
+            "parameters": []
           }
         }, {
-          "annotations": [], "serializedName": "mm",
-          "default": { "kind": "nothing" }, "name": "mm",
+          "annotations": [],
+          "serializedName": "mm",
+          "default": {
+            "kind": "nothing"
+          },
+          "name": "mm",
           "typeExpr": {
             "typeRef": {
               "kind": "primitive",
               "value": "Int32"
-            }, "parameters": []
+            },
+            "parameters": []
           }
         }, {
-          "annotations": [], "serializedName": "ss",
-          "default": { "kind": "nothing" }, "name": "ss",
+          "annotations": [],
+          "serializedName": "ss",
+          "default": {
+            "kind": "nothing"
+          },
+          "name": "ss",
           "typeExpr": {
             "typeRef": {
               "kind": "primitive",
               "value": "Int32"
-            }, "parameters": []
+            },
+            "parameters": []
           }
         }, {
-          "annotations": [], "serializedName": "ms",
-          "default": { "kind": "nothing" }, "name": "ms",
+          "annotations": [],
+          "serializedName": "ms",
+          "default": {
+            "kind": "nothing"
+          },
+          "name": "ms",
           "typeExpr": {
             "typeRef": {
               "kind": "primitive",
               "value": "Int32"
-            }, "parameters": []
+            },
+            "parameters": []
           }
         }, {
-          "annotations": [], "serializedName": "us",
-          "default": { "kind": "nothing" }, "name": "us",
+          "annotations": [],
+          "serializedName": "us",
+          "default": {
+            "kind": "nothing"
+          },
+          "name": "us",
           "typeExpr": {
             "typeRef": {
               "kind": "primitive",
               "value": "Int32"
-            }, "parameters": []
+            },
+            "parameters": []
           }
         }]
       }
-    }, "name": "TimeStampInts",
-    "version": { "kind": "nothing" }
+    },
+    "name": "TimeStampInts",
+    "version": {
+      "kind": "nothing"
+    }
   }
 };
 
@@ -195,18 +253,24 @@ const Jwt_AST: ADL.ScopedDecl =
 {
   "moduleName": "api",
   "decl": {
-    "annotations": [], "type_": {
+    "annotations": [],
+    "type_": {
       "kind": "type_",
       "value": {
-        "typeParams": [], "typeExpr": {
+        "typeParams": [],
+        "typeExpr": {
           "typeRef": {
             "kind": "primitive",
             "value": "String"
-          }, "parameters": []
+          },
+          "parameters": []
         }
       }
-    }, "name": "Jwt",
-    "version": { "kind": "nothing" }
+    },
+    "name": "Jwt",
+    "version": {
+      "kind": "nothing"
+    }
   }
 };
 
@@ -222,18 +286,24 @@ const Email_AST: ADL.ScopedDecl =
 {
   "moduleName": "api",
   "decl": {
-    "annotations": [], "type_": {
+    "annotations": [],
+    "type_": {
       "kind": "type_",
       "value": {
-        "typeParams": [], "typeExpr": {
+        "typeParams": [],
+        "typeExpr": {
           "typeRef": {
             "kind": "primitive",
             "value": "String"
-          }, "parameters": []
+          },
+          "parameters": []
         }
       }
-    }, "name": "Email",
-    "version": { "kind": "nothing" }
+    },
+    "name": "Email",
+    "version": {
+      "kind": "nothing"
+    }
   }
 };
 
@@ -249,18 +319,24 @@ const Password_AST: ADL.ScopedDecl =
 {
   "moduleName": "api",
   "decl": {
-    "annotations": [], "type_": {
+    "annotations": [],
+    "type_": {
       "kind": "type_",
       "value": {
-        "typeParams": [], "typeExpr": {
+        "typeParams": [],
+        "typeExpr": {
           "typeRef": {
             "kind": "primitive",
             "value": "String"
-          }, "parameters": []
+          },
+          "parameters": []
         }
       }
-    }, "name": "Password",
-    "version": { "kind": "nothing" }
+    },
+    "name": "Password",
+    "version": {
+      "kind": "nothing"
+    }
   }
 };
 
@@ -276,18 +352,27 @@ const UserId_AST: ADL.ScopedDecl =
 {
   "moduleName": "api",
   "decl": {
-    "annotations": [], "type_": {
+    "annotations": [],
+    "type_": {
       "kind": "newtype_",
       "value": {
-        "typeParams": [], "default": { "kind": "nothing" }, "typeExpr": {
+        "typeParams": [],
+        "default": {
+          "kind": "nothing"
+        },
+        "typeExpr": {
           "typeRef": {
             "kind": "primitive",
             "value": "String"
-          }, "parameters": []
+          },
+          "parameters": []
         }
       }
-    }, "name": "UserId",
-    "version": { "kind": "nothing" }
+    },
+    "name": "UserId",
+    "version": {
+      "kind": "nothing"
+    }
   }
 };
 
@@ -303,18 +388,27 @@ const TimeStamp_AST: ADL.ScopedDecl =
 {
   "moduleName": "api",
   "decl": {
-    "annotations": [], "type_": {
+    "annotations": [],
+    "type_": {
       "kind": "newtype_",
       "value": {
-        "typeParams": [], "default": { "kind": "nothing" }, "typeExpr": {
+        "typeParams": [],
+        "default": {
+          "kind": "nothing"
+        },
+        "typeExpr": {
           "typeRef": {
             "kind": "primitive",
             "value": "String"
-          }, "parameters": []
+          },
+          "parameters": []
         }
       }
-    }, "name": "TimeStamp",
-    "version": { "kind": "nothing" }
+    },
+    "name": "TimeStamp",
+    "version": {
+      "kind": "nothing"
+    }
   }
 };
 
@@ -335,69 +429,92 @@ const HttpPost_AST: ADL.ScopedDecl =
 {
   "moduleName": "api",
   "decl": {
-    "annotations": [], "type_": {
+    "annotations": [],
+    "type_": {
       "kind": "struct_",
       "value": {
         "typeParams": ["I",
-          "O"], "fields": [{
-            "annotations": [], "serializedName": "path",
-            "default": { "kind": "nothing" }, "name": "path",
-            "typeExpr": {
+          "O"],
+        "fields": [{
+          "annotations": [],
+          "serializedName": "path",
+          "default": {
+            "kind": "nothing"
+          },
+          "name": "path",
+          "typeExpr": {
+            "typeRef": {
+              "kind": "primitive",
+              "value": "String"
+            },
+            "parameters": []
+          }
+        }, {
+          "annotations": [],
+          "serializedName": "security",
+          "default": {
+            "kind": "nothing"
+          },
+          "name": "security",
+          "typeExpr": {
+            "typeRef": {
+              "kind": "reference",
+              "value": {
+                "moduleName": "api",
+                "name": "HttpSecurity"
+              }
+            },
+            "parameters": []
+          }
+        }, {
+          "annotations": [],
+          "serializedName": "reqType",
+          "default": {
+            "kind": "just",
+            "value": null
+          },
+          "name": "reqType",
+          "typeExpr": {
+            "typeRef": {
+              "kind": "primitive",
+              "value": "TypeToken"
+            },
+            "parameters": [{
               "typeRef": {
-                "kind": "primitive",
-                "value": "String"
-              }, "parameters": []
-            }
-          }, {
-            "annotations": [], "serializedName": "security",
-            "default": { "kind": "nothing" }, "name": "security",
-            "typeExpr": {
+                "kind": "typeParam",
+                "value": "I"
+              },
+              "parameters": []
+            }]
+          }
+        }, {
+          "annotations": [],
+          "serializedName": "respType",
+          "default": {
+            "kind": "just",
+            "value": null
+          },
+          "name": "respType",
+          "typeExpr": {
+            "typeRef": {
+              "kind": "primitive",
+              "value": "TypeToken"
+            },
+            "parameters": [{
               "typeRef": {
-                "kind": "reference",
-                "value": {
-                  "moduleName": "api",
-                  "name": "HttpSecurity"
-                }
-              }, "parameters": []
-            }
-          }, {
-            "annotations": [], "serializedName": "reqType",
-            "default": {
-              "kind": "just",
-              "value": null
-            }, "name": "reqType",
-            "typeExpr": {
-              "typeRef": {
-                "kind": "primitive",
-                "value": "TypeToken"
-              }, "parameters": [{
-                "typeRef": {
-                  "kind": "typeParam",
-                  "value": "I"
-                }, "parameters": []
-              }]
-            }
-          }, {
-            "annotations": [], "serializedName": "respType",
-            "default": {
-              "kind": "just",
-              "value": null
-            }, "name": "respType",
-            "typeExpr": {
-              "typeRef": {
-                "kind": "primitive",
-                "value": "TypeToken"
-              }, "parameters": [{
-                "typeRef": {
-                  "kind": "typeParam",
-                  "value": "O"
-                }, "parameters": []
-              }]
-            }
-          }]
+                "kind": "typeParam",
+                "value": "O"
+              },
+              "parameters": []
+            }]
+          }
+        }]
       }
-    }, "name": "HttpPost",
-    "version": { "kind": "nothing" }
+    },
+    "name": "HttpPost",
+    "version": {
+      "kind": "nothing"
+    }
   }
 };
 
@@ -417,40 +534,60 @@ const HttpSecurity_AST: ADL.ScopedDecl =
 {
   "moduleName": "api",
   "decl": {
-    "annotations": [], "type_": {
+    "annotations": [],
+    "type_": {
       "kind": "union_",
       "value": {
-        "typeParams": [], "fields": [{
-          "annotations": [], "serializedName": "public",
-          "default": { "kind": "nothing" }, "name": "public",
+        "typeParams": [],
+        "fields": [{
+          "annotations": [],
+          "serializedName": "public",
+          "default": {
+            "kind": "nothing"
+          },
+          "name": "public",
           "typeExpr": {
             "typeRef": {
               "kind": "primitive",
               "value": "Void"
-            }, "parameters": []
+            },
+            "parameters": []
           }
         }, {
-          "annotations": [], "serializedName": "token",
-          "default": { "kind": "nothing" }, "name": "token",
+          "annotations": [],
+          "serializedName": "token",
+          "default": {
+            "kind": "nothing"
+          },
+          "name": "token",
           "typeExpr": {
             "typeRef": {
               "kind": "primitive",
               "value": "Void"
-            }, "parameters": []
+            },
+            "parameters": []
           }
         }, {
-          "annotations": [], "serializedName": "adminToken",
-          "default": { "kind": "nothing" }, "name": "adminToken",
+          "annotations": [],
+          "serializedName": "adminToken",
+          "default": {
+            "kind": "nothing"
+          },
+          "name": "adminToken",
           "typeExpr": {
             "typeRef": {
               "kind": "primitive",
               "value": "Void"
-            }, "parameters": []
+            },
+            "parameters": []
           }
         }]
       }
-    }, "name": "HttpSecurity",
-    "version": { "kind": "nothing" }
+    },
+    "name": "HttpSecurity",
+    "version": {
+      "kind": "nothing"
+    }
   }
 };
 
@@ -505,18 +642,22 @@ const Api_AST: ADL.ScopedDecl =
 {
   "moduleName": "api",
   "decl": {
-    "annotations": [], "type_": {
+    "annotations": [],
+    "type_": {
       "kind": "struct_",
       "value": {
-        "typeParams": [], "fields": [{
-          "annotations": [], "serializedName": "login",
+        "typeParams": [],
+        "fields": [{
+          "annotations": [],
+          "serializedName": "login",
           "default": {
             "kind": "just",
             "value": {
               "path": "/login",
               "security": "public"
             }
-          }, "name": "login",
+          },
+          "name": "login",
           "typeExpr": {
             "typeRef": {
               "kind": "reference",
@@ -524,14 +665,16 @@ const Api_AST: ADL.ScopedDecl =
                 "moduleName": "api",
                 "name": "HttpPost"
               }
-            }, "parameters": [{
+            },
+            "parameters": [{
               "typeRef": {
                 "kind": "reference",
                 "value": {
                   "moduleName": "api",
                   "name": "LoginReq"
                 }
-              }, "parameters": []
+              },
+              "parameters": []
             }, {
               "typeRef": {
                 "kind": "reference",
@@ -539,18 +682,21 @@ const Api_AST: ADL.ScopedDecl =
                   "moduleName": "api",
                   "name": "LoginResp"
                 }
-              }, "parameters": []
+              },
+              "parameters": []
             }]
           }
         }, {
-          "annotations": [], "serializedName": "recentMessages",
+          "annotations": [],
+          "serializedName": "recentMessages",
           "default": {
             "kind": "just",
             "value": {
               "path": "/recent-messages",
               "security": "token"
             }
-          }, "name": "recentMessages",
+          },
+          "name": "recentMessages",
           "typeExpr": {
             "typeRef": {
               "kind": "reference",
@@ -558,38 +704,44 @@ const Api_AST: ADL.ScopedDecl =
                 "moduleName": "api",
                 "name": "HttpPost"
               }
-            }, "parameters": [{
+            },
+            "parameters": [{
               "typeRef": {
                 "kind": "reference",
                 "value": {
                   "moduleName": "api",
                   "name": "RecentMessagesReq"
                 }
-              }, "parameters": []
+              },
+              "parameters": []
             }, {
               "typeRef": {
                 "kind": "primitive",
                 "value": "Vector"
-              }, "parameters": [{
+              },
+              "parameters": [{
                 "typeRef": {
                   "kind": "reference",
                   "value": {
                     "moduleName": "api",
                     "name": "Message"
                   }
-                }, "parameters": []
+                },
+                "parameters": []
               }]
             }]
           }
         }, {
-          "annotations": [], "serializedName": "newMessage",
+          "annotations": [],
+          "serializedName": "newMessage",
           "default": {
             "kind": "just",
             "value": {
               "path": "/new-message",
               "security": "token"
             }
-          }, "name": "newMessage",
+          },
+          "name": "newMessage",
           "typeExpr": {
             "typeRef": {
               "kind": "reference",
@@ -597,14 +749,16 @@ const Api_AST: ADL.ScopedDecl =
                 "moduleName": "api",
                 "name": "HttpPost"
               }
-            }, "parameters": [{
+            },
+            "parameters": [{
               "typeRef": {
                 "kind": "reference",
                 "value": {
                   "moduleName": "api",
                   "name": "NewMessageReq"
                 }
-              }, "parameters": []
+              },
+              "parameters": []
             }, {
               "typeRef": {
                 "kind": "reference",
@@ -612,18 +766,21 @@ const Api_AST: ADL.ScopedDecl =
                   "moduleName": "api",
                   "name": "Empty"
                 }
-              }, "parameters": []
+              },
+              "parameters": []
             }]
           }
         }, {
-          "annotations": [], "serializedName": "createUser",
+          "annotations": [],
+          "serializedName": "createUser",
           "default": {
             "kind": "just",
             "value": {
               "path": "/create-user",
               "security": "adminToken"
             }
-          }, "name": "createUser",
+          },
+          "name": "createUser",
           "typeExpr": {
             "typeRef": {
               "kind": "reference",
@@ -631,14 +788,16 @@ const Api_AST: ADL.ScopedDecl =
                 "moduleName": "api",
                 "name": "HttpPost"
               }
-            }, "parameters": [{
+            },
+            "parameters": [{
               "typeRef": {
                 "kind": "reference",
                 "value": {
                   "moduleName": "api",
                   "name": "CreateUserReq"
                 }
-              }, "parameters": []
+              },
+              "parameters": []
             }, {
               "typeRef": {
                 "kind": "reference",
@@ -646,18 +805,21 @@ const Api_AST: ADL.ScopedDecl =
                   "moduleName": "api",
                   "name": "CreateUserResp"
                 }
-              }, "parameters": []
+              },
+              "parameters": []
             }]
           }
         }, {
-          "annotations": [], "serializedName": "ping",
+          "annotations": [],
+          "serializedName": "ping",
           "default": {
             "kind": "just",
             "value": {
               "path": "/ping",
               "security": "public"
             }
-          }, "name": "ping",
+          },
+          "name": "ping",
           "typeExpr": {
             "typeRef": {
               "kind": "reference",
@@ -665,14 +827,16 @@ const Api_AST: ADL.ScopedDecl =
                 "moduleName": "api",
                 "name": "HttpPost"
               }
-            }, "parameters": [{
+            },
+            "parameters": [{
               "typeRef": {
                 "kind": "reference",
                 "value": {
                   "moduleName": "api",
                   "name": "Empty"
                 }
-              }, "parameters": []
+              },
+              "parameters": []
             }, {
               "typeRef": {
                 "kind": "reference",
@@ -680,13 +844,17 @@ const Api_AST: ADL.ScopedDecl =
                   "moduleName": "api",
                   "name": "Empty"
                 }
-              }, "parameters": []
+              },
+              "parameters": []
             }]
           }
         }]
       }
-    }, "name": "Api",
-    "version": { "kind": "nothing" }
+    },
+    "name": "Api",
+    "version": {
+      "kind": "nothing"
+    }
   }
 };
 
@@ -717,12 +885,18 @@ const LoginReq_AST: ADL.ScopedDecl =
 {
   "moduleName": "api",
   "decl": {
-    "annotations": [], "type_": {
+    "annotations": [],
+    "type_": {
       "kind": "struct_",
       "value": {
-        "typeParams": [], "fields": [{
-          "annotations": [], "serializedName": "email",
-          "default": { "kind": "nothing" }, "name": "email",
+        "typeParams": [],
+        "fields": [{
+          "annotations": [],
+          "serializedName": "email",
+          "default": {
+            "kind": "nothing"
+          },
+          "name": "email",
           "typeExpr": {
             "typeRef": {
               "kind": "reference",
@@ -730,21 +904,30 @@ const LoginReq_AST: ADL.ScopedDecl =
                 "moduleName": "api",
                 "name": "Email"
               }
-            }, "parameters": []
+            },
+            "parameters": []
           }
         }, {
-          "annotations": [], "serializedName": "password",
-          "default": { "kind": "nothing" }, "name": "password",
+          "annotations": [],
+          "serializedName": "password",
+          "default": {
+            "kind": "nothing"
+          },
+          "name": "password",
           "typeExpr": {
             "typeRef": {
               "kind": "primitive",
               "value": "String"
-            }, "parameters": []
+            },
+            "parameters": []
           }
         }]
       }
-    }, "name": "LoginReq",
-    "version": { "kind": "nothing" }
+    },
+    "name": "LoginReq",
+    "version": {
+      "kind": "nothing"
+    }
   }
 };
 
@@ -775,12 +958,18 @@ const LoginResp_AST: ADL.ScopedDecl =
 {
   "moduleName": "api",
   "decl": {
-    "annotations": [], "type_": {
+    "annotations": [],
+    "type_": {
       "kind": "union_",
       "value": {
-        "typeParams": [], "fields": [{
-          "annotations": [], "serializedName": "success",
-          "default": { "kind": "nothing" }, "name": "success",
+        "typeParams": [],
+        "fields": [{
+          "annotations": [],
+          "serializedName": "success",
+          "default": {
+            "kind": "nothing"
+          },
+          "name": "success",
           "typeExpr": {
             "typeRef": {
               "kind": "reference",
@@ -788,21 +977,30 @@ const LoginResp_AST: ADL.ScopedDecl =
                 "moduleName": "api",
                 "name": "Jwt"
               }
-            }, "parameters": []
+            },
+            "parameters": []
           }
         }, {
-          "annotations": [], "serializedName": "failure",
-          "default": { "kind": "nothing" }, "name": "failure",
+          "annotations": [],
+          "serializedName": "failure",
+          "default": {
+            "kind": "nothing"
+          },
+          "name": "failure",
           "typeExpr": {
             "typeRef": {
               "kind": "primitive",
               "value": "Void"
-            }, "parameters": []
+            },
+            "parameters": []
           }
         }]
       }
-    }, "name": "LoginResp",
-    "version": { "kind": "nothing" }
+    },
+    "name": "LoginResp",
+    "version": {
+      "kind": "nothing"
+    }
   }
 };
 
@@ -830,22 +1028,32 @@ const NewMessageReq_AST: ADL.ScopedDecl =
 {
   "moduleName": "api",
   "decl": {
-    "annotations": [], "type_": {
+    "annotations": [],
+    "type_": {
       "kind": "struct_",
       "value": {
-        "typeParams": [], "fields": [{
-          "annotations": [], "serializedName": "body",
-          "default": { "kind": "nothing" }, "name": "body",
+        "typeParams": [],
+        "fields": [{
+          "annotations": [],
+          "serializedName": "body",
+          "default": {
+            "kind": "nothing"
+          },
+          "name": "body",
           "typeExpr": {
             "typeRef": {
               "kind": "primitive",
               "value": "String"
-            }, "parameters": []
+            },
+            "parameters": []
           }
         }]
       }
-    }, "name": "NewMessageReq",
-    "version": { "kind": "nothing" }
+    },
+    "name": "NewMessageReq",
+    "version": {
+      "kind": "nothing"
+    }
   }
 };
 
@@ -873,22 +1081,32 @@ const RecentMessagesReq_AST: ADL.ScopedDecl =
 {
   "moduleName": "api",
   "decl": {
-    "annotations": [], "type_": {
+    "annotations": [],
+    "type_": {
       "kind": "struct_",
       "value": {
-        "typeParams": [], "fields": [{
-          "annotations": [], "serializedName": "maxMessages",
-          "default": { "kind": "nothing" }, "name": "maxMessages",
+        "typeParams": [],
+        "fields": [{
+          "annotations": [],
+          "serializedName": "maxMessages",
+          "default": {
+            "kind": "nothing"
+          },
+          "name": "maxMessages",
           "typeExpr": {
             "typeRef": {
               "kind": "primitive",
               "value": "Int32"
-            }, "parameters": []
+            },
+            "parameters": []
           }
         }]
       }
-    }, "name": "RecentMessagesReq",
-    "version": { "kind": "nothing" }
+    },
+    "name": "RecentMessagesReq",
+    "version": {
+      "kind": "nothing"
+    }
   }
 };
 
@@ -922,12 +1140,18 @@ const CreateUserReq_AST: ADL.ScopedDecl =
 {
   "moduleName": "api",
   "decl": {
-    "annotations": [], "type_": {
+    "annotations": [],
+    "type_": {
       "kind": "struct_",
       "value": {
-        "typeParams": [], "fields": [{
-          "annotations": [], "serializedName": "email",
-          "default": { "kind": "nothing" }, "name": "email",
+        "typeParams": [],
+        "fields": [{
+          "annotations": [],
+          "serializedName": "email",
+          "default": {
+            "kind": "nothing"
+          },
+          "name": "email",
           "typeExpr": {
             "typeRef": {
               "kind": "reference",
@@ -935,11 +1159,16 @@ const CreateUserReq_AST: ADL.ScopedDecl =
                 "moduleName": "api",
                 "name": "Email"
               }
-            }, "parameters": []
+            },
+            "parameters": []
           }
         }, {
-          "annotations": [], "serializedName": "password",
-          "default": { "kind": "nothing" }, "name": "password",
+          "annotations": [],
+          "serializedName": "password",
+          "default": {
+            "kind": "nothing"
+          },
+          "name": "password",
           "typeExpr": {
             "typeRef": {
               "kind": "reference",
@@ -947,21 +1176,30 @@ const CreateUserReq_AST: ADL.ScopedDecl =
                 "moduleName": "api",
                 "name": "Password"
               }
-            }, "parameters": []
+            },
+            "parameters": []
           }
         }, {
-          "annotations": [], "serializedName": "isAdmin",
-          "default": { "kind": "nothing" }, "name": "isAdmin",
+          "annotations": [],
+          "serializedName": "isAdmin",
+          "default": {
+            "kind": "nothing"
+          },
+          "name": "isAdmin",
           "typeExpr": {
             "typeRef": {
               "kind": "primitive",
               "value": "Bool"
-            }, "parameters": []
+            },
+            "parameters": []
           }
         }]
       }
-    }, "name": "CreateUserReq",
-    "version": { "kind": "nothing" }
+    },
+    "name": "CreateUserReq",
+    "version": {
+      "kind": "nothing"
+    }
   }
 };
 
@@ -992,12 +1230,18 @@ const CreateUserResp_AST: ADL.ScopedDecl =
 {
   "moduleName": "api",
   "decl": {
-    "annotations": [], "type_": {
+    "annotations": [],
+    "type_": {
       "kind": "union_",
       "value": {
-        "typeParams": [], "fields": [{
-          "annotations": [], "serializedName": "success",
-          "default": { "kind": "nothing" }, "name": "success",
+        "typeParams": [],
+        "fields": [{
+          "annotations": [],
+          "serializedName": "success",
+          "default": {
+            "kind": "nothing"
+          },
+          "name": "success",
           "typeExpr": {
             "typeRef": {
               "kind": "reference",
@@ -1005,21 +1249,30 @@ const CreateUserResp_AST: ADL.ScopedDecl =
                 "moduleName": "api",
                 "name": "UserId"
               }
-            }, "parameters": []
+            },
+            "parameters": []
           }
         }, {
-          "annotations": [], "serializedName": "duplicateEmail",
-          "default": { "kind": "nothing" }, "name": "duplicateEmail",
+          "annotations": [],
+          "serializedName": "duplicateEmail",
+          "default": {
+            "kind": "nothing"
+          },
+          "name": "duplicateEmail",
           "typeExpr": {
             "typeRef": {
               "kind": "primitive",
               "value": "Void"
-            }, "parameters": []
+            },
+            "parameters": []
           }
         }]
       }
-    }, "name": "CreateUserResp",
-    "version": { "kind": "nothing" }
+    },
+    "name": "CreateUserResp",
+    "version": {
+      "kind": "nothing"
+    }
   }
 };
 
@@ -1056,21 +1309,32 @@ const Message_AST: ADL.ScopedDecl =
 {
   "moduleName": "api",
   "decl": {
-    "annotations": [], "type_": {
+    "annotations": [],
+    "type_": {
       "kind": "struct_",
       "value": {
-        "typeParams": [], "fields": [{
-          "annotations": [], "serializedName": "id",
-          "default": { "kind": "nothing" }, "name": "id",
+        "typeParams": [],
+        "fields": [{
+          "annotations": [],
+          "serializedName": "id",
+          "default": {
+            "kind": "nothing"
+          },
+          "name": "id",
           "typeExpr": {
             "typeRef": {
               "kind": "primitive",
               "value": "String"
-            }, "parameters": []
+            },
+            "parameters": []
           }
         }, {
-          "annotations": [], "serializedName": "postedBy",
-          "default": { "kind": "nothing" }, "name": "postedBy",
+          "annotations": [],
+          "serializedName": "postedBy",
+          "default": {
+            "kind": "nothing"
+          },
+          "name": "postedBy",
           "typeExpr": {
             "typeRef": {
               "kind": "reference",
@@ -1078,11 +1342,16 @@ const Message_AST: ADL.ScopedDecl =
                 "moduleName": "api",
                 "name": "Email"
               }
-            }, "parameters": []
+            },
+            "parameters": []
           }
         }, {
-          "annotations": [], "serializedName": "postedAt",
-          "default": { "kind": "nothing" }, "name": "postedAt",
+          "annotations": [],
+          "serializedName": "postedAt",
+          "default": {
+            "kind": "nothing"
+          },
+          "name": "postedAt",
           "typeExpr": {
             "typeRef": {
               "kind": "reference",
@@ -1090,21 +1359,30 @@ const Message_AST: ADL.ScopedDecl =
                 "moduleName": "api",
                 "name": "TimeStamp"
               }
-            }, "parameters": []
+            },
+            "parameters": []
           }
         }, {
-          "annotations": [], "serializedName": "body",
-          "default": { "kind": "nothing" }, "name": "body",
+          "annotations": [],
+          "serializedName": "body",
+          "default": {
+            "kind": "nothing"
+          },
+          "name": "body",
           "typeExpr": {
             "typeRef": {
               "kind": "primitive",
               "value": "String"
-            }, "parameters": []
+            },
+            "parameters": []
           }
         }]
       }
-    }, "name": "Message",
-    "version": { "kind": "nothing" }
+    },
+    "name": "Message",
+    "version": {
+      "kind": "nothing"
+    }
   }
 };
 
@@ -1120,18 +1398,24 @@ const FilePath_AST: ADL.ScopedDecl =
 {
   "moduleName": "api",
   "decl": {
-    "annotations": [], "type_": {
+    "annotations": [],
+    "type_": {
       "kind": "type_",
       "value": {
-        "typeParams": [], "typeExpr": {
+        "typeParams": [],
+        "typeExpr": {
           "typeRef": {
             "kind": "primitive",
             "value": "String"
-          }, "parameters": []
+          },
+          "parameters": []
         }
       }
-    }, "name": "FilePath",
-    "version": { "kind": "nothing" }
+    },
+    "name": "FilePath",
+    "version": {
+      "kind": "nothing"
+    }
   }
 };
 
@@ -1162,12 +1446,18 @@ const SslConfiguration_AST: ADL.ScopedDecl =
 {
   "moduleName": "api",
   "decl": {
-    "annotations": [], "type_": {
+    "annotations": [],
+    "type_": {
       "kind": "struct_",
       "value": {
-        "typeParams": [], "fields": [{
-          "annotations": [], "serializedName": "certificate",
-          "default": { "kind": "nothing" }, "name": "certificate",
+        "typeParams": [],
+        "fields": [{
+          "annotations": [],
+          "serializedName": "certificate",
+          "default": {
+            "kind": "nothing"
+          },
+          "name": "certificate",
           "typeExpr": {
             "typeRef": {
               "kind": "reference",
@@ -1175,11 +1465,16 @@ const SslConfiguration_AST: ADL.ScopedDecl =
                 "moduleName": "api",
                 "name": "FilePath"
               }
-            }, "parameters": []
+            },
+            "parameters": []
           }
         }, {
-          "annotations": [], "serializedName": "certificateKey",
-          "default": { "kind": "nothing" }, "name": "certificateKey",
+          "annotations": [],
+          "serializedName": "certificateKey",
+          "default": {
+            "kind": "nothing"
+          },
+          "name": "certificateKey",
           "typeExpr": {
             "typeRef": {
               "kind": "reference",
@@ -1187,12 +1482,16 @@ const SslConfiguration_AST: ADL.ScopedDecl =
                 "moduleName": "api",
                 "name": "FilePath"
               }
-            }, "parameters": []
+            },
+            "parameters": []
           }
         }]
       }
-    }, "name": "SslConfiguration",
-    "version": { "kind": "nothing" }
+    },
+    "name": "SslConfiguration",
+    "version": {
+      "kind": "nothing"
+    }
   }
 };
 
@@ -1202,15 +1501,15 @@ export function texprSslConfiguration(): ADL.ATypeExpr<SslConfiguration> {
   return { value: { typeRef: { kind: "reference", value: snSslConfiguration }, parameters: [] } };
 }
 
-export interface Protocol_Http {
+export interface ProtocolHttp {
   kind: 'http';
 }
-export interface Protocol_Https {
+export interface ProtocolHttps {
   kind: 'https';
   value: SslConfiguration;
 }
 
-export type Protocol = Protocol_Http | Protocol_Https;
+export type Protocol = ProtocolHttp | ProtocolHttps;
 
 export interface ProtocolOpts {
   http: null;
@@ -1223,21 +1522,32 @@ const Protocol_AST: ADL.ScopedDecl =
 {
   "moduleName": "api",
   "decl": {
-    "annotations": [], "type_": {
+    "annotations": [],
+    "type_": {
       "kind": "union_",
       "value": {
-        "typeParams": [], "fields": [{
-          "annotations": [], "serializedName": "http",
-          "default": { "kind": "nothing" }, "name": "http",
+        "typeParams": [],
+        "fields": [{
+          "annotations": [],
+          "serializedName": "http",
+          "default": {
+            "kind": "nothing"
+          },
+          "name": "http",
           "typeExpr": {
             "typeRef": {
               "kind": "primitive",
               "value": "Void"
-            }, "parameters": []
+            },
+            "parameters": []
           }
         }, {
-          "annotations": [], "serializedName": "https",
-          "default": { "kind": "nothing" }, "name": "https",
+          "annotations": [],
+          "serializedName": "https",
+          "default": {
+            "kind": "nothing"
+          },
+          "name": "https",
           "typeExpr": {
             "typeRef": {
               "kind": "reference",
@@ -1245,12 +1555,16 @@ const Protocol_AST: ADL.ScopedDecl =
                 "moduleName": "api",
                 "name": "SslConfiguration"
               }
-            }, "parameters": []
+            },
+            "parameters": []
           }
         }]
       }
-    }, "name": "Protocol",
-    "version": { "kind": "nothing" }
+    },
+    "name": "Protocol",
+    "version": {
+      "kind": "nothing"
+    }
   }
 };
 
@@ -1272,58 +1586,88 @@ const LogLevel_AST: ADL.ScopedDecl =
 {
   "moduleName": "api",
   "decl": {
-    "annotations": [], "type_": {
+    "annotations": [],
+    "type_": {
       "kind": "union_",
       "value": {
-        "typeParams": [], "fields": [{
-          "annotations": [], "serializedName": "error",
-          "default": { "kind": "nothing" }, "name": "error",
+        "typeParams": [],
+        "fields": [{
+          "annotations": [],
+          "serializedName": "error",
+          "default": {
+            "kind": "nothing"
+          },
+          "name": "error",
           "typeExpr": {
             "typeRef": {
               "kind": "primitive",
               "value": "Void"
-            }, "parameters": []
+            },
+            "parameters": []
           }
         }, {
-          "annotations": [], "serializedName": "warn",
-          "default": { "kind": "nothing" }, "name": "warn",
+          "annotations": [],
+          "serializedName": "warn",
+          "default": {
+            "kind": "nothing"
+          },
+          "name": "warn",
           "typeExpr": {
             "typeRef": {
               "kind": "primitive",
               "value": "Void"
-            }, "parameters": []
+            },
+            "parameters": []
           }
         }, {
-          "annotations": [], "serializedName": "info",
-          "default": { "kind": "nothing" }, "name": "info",
+          "annotations": [],
+          "serializedName": "info",
+          "default": {
+            "kind": "nothing"
+          },
+          "name": "info",
           "typeExpr": {
             "typeRef": {
               "kind": "primitive",
               "value": "Void"
-            }, "parameters": []
+            },
+            "parameters": []
           }
         }, {
-          "annotations": [], "serializedName": "debug",
-          "default": { "kind": "nothing" }, "name": "debug",
+          "annotations": [],
+          "serializedName": "debug",
+          "default": {
+            "kind": "nothing"
+          },
+          "name": "debug",
           "typeExpr": {
             "typeRef": {
               "kind": "primitive",
               "value": "Void"
-            }, "parameters": []
+            },
+            "parameters": []
           }
         }, {
-          "annotations": [], "serializedName": "trace",
-          "default": { "kind": "nothing" }, "name": "trace",
+          "annotations": [],
+          "serializedName": "trace",
+          "default": {
+            "kind": "nothing"
+          },
+          "name": "trace",
           "typeExpr": {
             "typeRef": {
               "kind": "primitive",
               "value": "Void"
-            }, "parameters": []
+            },
+            "parameters": []
           }
         }]
       }
-    }, "name": "LogLevel",
-    "version": { "kind": "nothing" }
+    },
+    "name": "LogLevel",
+    "version": {
+      "kind": "nothing"
+    }
   }
 };
 
@@ -1369,36 +1713,48 @@ const ServerConfig_AST: ADL.ScopedDecl =
 {
   "moduleName": "api",
   "decl": {
-    "annotations": [], "type_": {
+    "annotations": [],
+    "type_": {
       "kind": "struct_",
       "value": {
-        "typeParams": [], "fields": [{
-          "annotations": [], "serializedName": "port",
+        "typeParams": [],
+        "fields": [{
+          "annotations": [],
+          "serializedName": "port",
           "default": {
             "kind": "just",
             "value": 8080
-          }, "name": "port",
+          },
+          "name": "port",
           "typeExpr": {
             "typeRef": {
               "kind": "primitive",
               "value": "Int32"
-            }, "parameters": []
+            },
+            "parameters": []
           }
         }, {
-          "annotations": [], "serializedName": "jwtSecret",
-          "default": { "kind": "nothing" }, "name": "jwtSecret",
+          "annotations": [],
+          "serializedName": "jwtSecret",
+          "default": {
+            "kind": "nothing"
+          },
+          "name": "jwtSecret",
           "typeExpr": {
             "typeRef": {
               "kind": "primitive",
               "value": "String"
-            }, "parameters": []
+            },
+            "parameters": []
           }
         }, {
-          "annotations": [], "serializedName": "protocol",
+          "annotations": [],
+          "serializedName": "protocol",
           "default": {
             "kind": "just",
             "value": "http"
-          }, "name": "protocol",
+          },
+          "name": "protocol",
           "typeExpr": {
             "typeRef": {
               "kind": "reference",
@@ -1406,14 +1762,17 @@ const ServerConfig_AST: ADL.ScopedDecl =
                 "moduleName": "api",
                 "name": "Protocol"
               }
-            }, "parameters": []
+            },
+            "parameters": []
           }
         }, {
-          "annotations": [], "serializedName": "logLevel",
+          "annotations": [],
+          "serializedName": "logLevel",
           "default": {
             "kind": "just",
             "value": "info"
-          }, "name": "logLevel",
+          },
+          "name": "logLevel",
           "typeExpr": {
             "typeRef": {
               "kind": "reference",
@@ -1421,12 +1780,16 @@ const ServerConfig_AST: ADL.ScopedDecl =
                 "moduleName": "api",
                 "name": "LogLevel"
               }
-            }, "parameters": []
+            },
+            "parameters": []
           }
         }]
       }
-    }, "name": "ServerConfig",
-    "version": { "kind": "nothing" }
+    },
+    "name": "ServerConfig",
+    "version": {
+      "kind": "nothing"
+    }
   }
 };
 
@@ -1469,30 +1832,46 @@ const AppMessage_AST: ADL.ScopedDecl =
 {
   "moduleName": "api",
   "decl": {
-    "annotations": [], "type_": {
+    "annotations": [],
+    "type_": {
       "kind": "struct_",
       "value": {
-        "typeParams": [], "fields": [{
-          "annotations": [], "serializedName": "id",
-          "default": { "kind": "nothing" }, "name": "id",
+        "typeParams": [],
+        "fields": [{
+          "annotations": [],
+          "serializedName": "id",
+          "default": {
+            "kind": "nothing"
+          },
+          "name": "id",
           "typeExpr": {
             "typeRef": {
               "kind": "primitive",
               "value": "String"
-            }, "parameters": []
+            },
+            "parameters": []
           }
         }, {
-          "annotations": [], "serializedName": "appName",
-          "default": { "kind": "nothing" }, "name": "appName",
+          "annotations": [],
+          "serializedName": "appName",
+          "default": {
+            "kind": "nothing"
+          },
+          "name": "appName",
           "typeExpr": {
             "typeRef": {
               "kind": "primitive",
               "value": "String"
-            }, "parameters": []
+            },
+            "parameters": []
           }
         }, {
-          "annotations": [], "serializedName": "state",
-          "default": { "kind": "nothing" }, "name": "state",
+          "annotations": [],
+          "serializedName": "state",
+          "default": {
+            "kind": "nothing"
+          },
+          "name": "state",
           "typeExpr": {
             "typeRef": {
               "kind": "reference",
@@ -1500,11 +1879,16 @@ const AppMessage_AST: ADL.ScopedDecl =
                 "moduleName": "api",
                 "name": "AppState"
               }
-            }, "parameters": []
+            },
+            "parameters": []
           }
         }, {
-          "annotations": [], "serializedName": "postedBy",
-          "default": { "kind": "nothing" }, "name": "postedBy",
+          "annotations": [],
+          "serializedName": "postedBy",
+          "default": {
+            "kind": "nothing"
+          },
+          "name": "postedBy",
           "typeExpr": {
             "typeRef": {
               "kind": "reference",
@@ -1512,11 +1896,16 @@ const AppMessage_AST: ADL.ScopedDecl =
                 "moduleName": "api",
                 "name": "Email"
               }
-            }, "parameters": []
+            },
+            "parameters": []
           }
         }, {
-          "annotations": [], "serializedName": "postedAt",
-          "default": { "kind": "nothing" }, "name": "postedAt",
+          "annotations": [],
+          "serializedName": "postedAt",
+          "default": {
+            "kind": "nothing"
+          },
+          "name": "postedAt",
           "typeExpr": {
             "typeRef": {
               "kind": "reference",
@@ -1524,21 +1913,30 @@ const AppMessage_AST: ADL.ScopedDecl =
                 "moduleName": "api",
                 "name": "TimeStamp"
               }
-            }, "parameters": []
+            },
+            "parameters": []
           }
         }, {
-          "annotations": [], "serializedName": "body",
-          "default": { "kind": "nothing" }, "name": "body",
+          "annotations": [],
+          "serializedName": "body",
+          "default": {
+            "kind": "nothing"
+          },
+          "name": "body",
           "typeExpr": {
             "typeRef": {
               "kind": "primitive",
               "value": "String"
-            }, "parameters": []
+            },
+            "parameters": []
           }
         }]
       }
-    }, "name": "AppMessage",
-    "version": { "kind": "nothing" }
+    },
+    "name": "AppMessage",
+    "version": {
+      "kind": "nothing"
+    }
   }
 };
 
@@ -1572,12 +1970,18 @@ const AppState_AST: ADL.ScopedDecl =
 {
   "moduleName": "api",
   "decl": {
-    "annotations": [], "type_": {
+    "annotations": [],
+    "type_": {
       "kind": "struct_",
       "value": {
-        "typeParams": [], "fields": [{
-          "annotations": [], "serializedName": "server",
-          "default": { "kind": "nothing" }, "name": "server",
+        "typeParams": [],
+        "fields": [{
+          "annotations": [],
+          "serializedName": "server",
+          "default": {
+            "kind": "nothing"
+          },
+          "name": "server",
           "typeExpr": {
             "typeRef": {
               "kind": "reference",
@@ -1585,43 +1989,59 @@ const AppState_AST: ADL.ScopedDecl =
                 "moduleName": "api",
                 "name": "ServerConfig"
               }
-            }, "parameters": []
+            },
+            "parameters": []
           }
         }, {
-          "annotations": [], "serializedName": "users",
-          "default": { "kind": "nothing" }, "name": "users",
+          "annotations": [],
+          "serializedName": "users",
+          "default": {
+            "kind": "nothing"
+          },
+          "name": "users",
           "typeExpr": {
             "typeRef": {
               "kind": "primitive",
               "value": "Vector"
-            }, "parameters": [{
+            },
+            "parameters": [{
               "typeRef": {
                 "kind": "primitive",
                 "value": "String"
-              }, "parameters": []
+              },
+              "parameters": []
             }]
           }
         }, {
-          "annotations": [], "serializedName": "messages",
-          "default": { "kind": "nothing" }, "name": "messages",
+          "annotations": [],
+          "serializedName": "messages",
+          "default": {
+            "kind": "nothing"
+          },
+          "name": "messages",
           "typeExpr": {
             "typeRef": {
               "kind": "primitive",
               "value": "Vector"
-            }, "parameters": [{
+            },
+            "parameters": [{
               "typeRef": {
                 "kind": "reference",
                 "value": {
                   "moduleName": "api",
                   "name": "AppMessage"
                 }
-              }, "parameters": []
+              },
+              "parameters": []
             }]
           }
         }]
       }
-    }, "name": "AppState",
-    "version": { "kind": "nothing" }
+    },
+    "name": "AppState",
+    "version": {
+      "kind": "nothing"
+    }
   }
 };
 
