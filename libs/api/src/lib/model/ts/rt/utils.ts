@@ -1,7 +1,7 @@
 import * as AST from './sys/adlast';
 
 export function isEnum(union : AST.Union) : boolean {
-  for (let field of union.fields) {
+  for (const field of union.fields) {
     if (!isVoid(field.typeExpr)) {
       return false;
     }
@@ -20,7 +20,7 @@ export function typeExprsEqual(texpr1 : AST.TypeExpr, texpr2 : AST.TypeExpr) : b
   if (!typeRefsEqual(texpr1.typeRef, texpr2.typeRef)) {
     return false;
   }
-  if (texpr1.parameters.length != texpr2.parameters.length) {
+  if (texpr1.parameters.length !== texpr2.parameters.length) {
     return false;
   }
   for (let i = 0; i < texpr1.parameters.length; i++) {
@@ -48,11 +48,11 @@ export function scopedNamesEqual(sn1: AST.ScopedName, sn2: AST.ScopedName): bool
 
 function typeExprToStringImpl(te: AST.TypeExpr, withScopedNames: boolean) : string {
   let result = "";
-  if (te.typeRef.kind == "primitive") {
+  if (te.typeRef.kind === "primitive") {
     result = te.typeRef.value;
-  } else if (te.typeRef.kind == "typeParam") {
+  } else if (te.typeRef.kind === "typeParam") {
     result = te.typeRef.value;
-  } else if (te.typeRef.kind == "reference") {
+  } else if (te.typeRef.kind === "reference") {
     result = withScopedNames
       ? te.typeRef.value.moduleName + "." + te.typeRef.value.name
       : te.typeRef.value.name;

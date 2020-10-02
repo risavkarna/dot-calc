@@ -1,6 +1,6 @@
 /* @generated from adl module demo.model */
 
-import * as ADL from '../../ts/ts/rt/adl';
+import * as ADL from '../../ts/rt/adl';
 
 export interface DbTable {
   tableName: string;

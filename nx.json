@@ -24,9 +24,6 @@
   "projects": {
     "api": {
       "tags": ["api", "adl", "types", "hfsm"]
-    },
-    "config": {
-      "tags": ["adl", "conf", "settings", "mono", "dot", "scala"]
     }
   }
 }

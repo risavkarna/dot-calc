@@ -1,4 +1,10 @@
 {
   "name": "@cosys-work/api",
-  "version": "0.0.1"
+  "version": "0.0.1",
+  "dependencies": {
+    "base64-js": "^1.3.1"
+  },
+  "devDependencies": {
+    "@types/base64-js": "^1.3.0"
+  }
 }
