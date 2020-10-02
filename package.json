@@ -29,6 +29,8 @@
   },
   "private": true,
   "dependencies": {
+    "@nestjs/common": "^7.4.4",
+    "@nestjs/testing": "^7.4.4",
     "@nrwl/angular": "10.2.1"
   },
   "devDependencies": {
@@ -42,6 +44,10 @@
     "typescript": "~3.9.3",
     "prettier": "2.0.4",
     "@nrwl/nest": "10.2.1",
-    "@nrwl/nx-cloud": "latest"
+    "@nrwl/nx-cloud": "latest",
+    "@nrwl/jest": "10.2.1",
+    "jest": "26.2.2",
+    "@types/jest": "26.0.8",
+    "ts-jest": "26.1.4"
   }
 }
