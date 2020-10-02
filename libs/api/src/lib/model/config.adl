@@ -1,6 +1,27 @@
 /// Application configuration for a demonstration api server
 module config {
 
+type FilePath = String;
+
+struct SslConfiguration {
+  FilePath certificate;
+  FilePath certificateKey;
+};
+
+union Protocol {
+  Void http;
+  SslConfiguration https;
+};
+
+union LogLevel {
+  Void error;
+  Void warn;
+  Void info;
+  Void debug;
+  Void trace;
+};
+
+
 /// The schema for the server's YAML configuration file
 struct ServerConfig {
 
@@ -9,6 +30,25 @@ struct ServerConfig {
 
   /// The secret used to sign the server's json web tokens
   String jwtSecret;
+
+  Protocol protocol = "http";
+  LogLevel logLevel = "info";
+
 };
+
+struct AppMessage {
+  String id;
+  String appName;
+  AppState state;
+  Email postedBy;
+  TimeStamp postedAt;
+  String body;
+};
+
+struct AppState {
+  ServerConfig server;
+  Vector<String> users;
+  Vector<AppMessage> messages;
+}
 
 };

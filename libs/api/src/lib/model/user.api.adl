@@ -1,0 +1,41 @@
+module demo.model
+{
+
+import demo.dbannotations.*;
+
+@DbTable {
+  "tableName" : "demo.users",
+  "primaryKey" : ["email"]
+}
+struct User
+{
+   @DbField "email"
+   String email;
+
+   @DbField "full_name"
+   String fullName;
+
+   @DbField "hashed_password"
+   String hashedPassword;
+
+   @DbField "role"
+   String role;
+
+   @DbField "is_admin"
+   Boolean isAdmin;
+};
+
+struct Address
+{
+   Int id;
+   Vector<String> details;
+};
+
+annotation Address DbTable {
+  "tableName" : "demo.address",
+  "primaryKey" : ["id"]
+};
+annotation Address.id DbField "id";
+annotation Address.details DbField "details";
+
+};

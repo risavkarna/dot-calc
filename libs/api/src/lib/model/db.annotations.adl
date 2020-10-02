@@ -1,0 +1,10 @@
+module demo.dbannotations {
+
+  struct DbTable
+  {
+    String tableName;
+    Vector<String> primaryKey;
+  };
+
+  type DbField = String;
+};

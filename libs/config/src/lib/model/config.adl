@@ -5,6 +5,7 @@ struct ServerConfig {
   Int32 port;
   Protocol protocol = "http";
   LogLevel logLevel = "info";
+  String jwtSecret;
 };
 
 union Protocol {
