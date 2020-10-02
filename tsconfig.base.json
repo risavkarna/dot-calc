@@ -16,7 +16,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@cosys-work/api": ["libs/api/src/index.ts"]
+      "@cosys-work/api": ["libs/api/src/index.ts"],
+      "@cosys-work/config": ["libs/config/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
