@@ -1,7 +1,13 @@
 module demo.model
 {
 
-import demo.dbannotations.*;
+struct DbTable
+{
+  String tableName;
+  Vector<String> primaryKey;
+};
+
+type DbField = String;
 
 @DbTable {
   "tableName" : "demo.users",
@@ -22,12 +28,12 @@ struct User
    String role;
 
    @DbField "is_admin"
-   Boolean isAdmin;
+   Bool isAdmin;
 };
 
 struct Address
 {
-   Int id;
+   Int32 id;
    Vector<String> details;
 };
 
@@ -35,7 +41,8 @@ annotation Address DbTable {
   "tableName" : "demo.address",
   "primaryKey" : ["id"]
 };
-annotation Address.id DbField "id";
-annotation Address.details DbField "details";
+
+// annotation Address.id DbField "id";
+// annotation Address.details DbField "details";
 
 };

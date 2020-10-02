@@ -10,4 +10,8 @@ annotation CreateUserReq HaskellFieldPrefix "cur_";
 annotation CreateUserResp HaskellFieldPrefix "CUR_";
 annotation NewMessageReq HaskellFieldPrefix "nmr_";
 annotation RecentMessagesReq HaskellFieldPrefix "rmr_";
+annotation ServerConfig HaskellFieldPrefix "sc_";
+annotation Protocol HaskellFieldPrefix "p_";
+annotation SslConfiguration HaskellFieldPrefix "ssl_";
+annotation LogLevel HaskellFieldPrefix "log_";
 };

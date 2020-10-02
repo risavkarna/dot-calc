@@ -1,12 +1,50 @@
 module api {
 
-import types.Email;
-import types.Empty;
-import types.TimeStamp;
-import types.Jwt;
-import types.HttpPost;
-import types.Password;
-import types.UserId;
+struct EmailStruct {
+  String userid;
+  String org;
+  String full;
+};
+
+struct Empty {};
+
+struct TimeStampInts {
+  Int32 hh;
+  Int32 mm;
+  Int32 ss;
+  Int32 ms;
+  Int32 us;
+};
+
+type Jwt = String;
+type Email = String;
+type Password = String;
+
+newtype UserId = String;
+
+// A UTC timestamp in iso8601 format
+newtype TimeStamp = String;
+
+// A post request with request body of type I, and response
+// body of type O
+struct HttpPost<I,O> {
+  String path;
+  HttpSecurity security;
+  TypeToken<I> reqType = null;
+  TypeToken<O> respType = null;
+};
+
+union HttpSecurity {
+  // The endpoint is publically accessible
+  Void public;
+
+  // A JWT is required in a bearer Authorization header
+  Void token;
+
+  // A JWT with an admin claim is required in a bearer Authorization header
+  Void adminToken;
+};
+
 
 struct Api {
   /// Login to obtain an authorization token
@@ -74,6 +112,56 @@ struct Message {
   Email postedBy;
   TimeStamp postedAt;
   String body;
+};
+
+type FilePath = String;
+
+struct SslConfiguration {
+  FilePath certificate;
+  FilePath certificateKey;
+};
+
+union Protocol {
+  Void http;
+  SslConfiguration https;
+};
+
+union LogLevel {
+  Void error;
+  Void warn;
+  Void info;
+  Void debug;
+  Void trace;
+};
+
+
+/// The schema for the server's YAML configuration file
+struct ServerConfig {
+
+  /// The port which accepts http connections
+  Int32 port = 8080;
+
+  /// The secret used to sign the server's json web tokens
+  String jwtSecret;
+
+  Protocol protocol = "http";
+  LogLevel logLevel = "info";
+
+};
+
+struct AppMessage {
+  String id;
+  String appName;
+  AppState state;
+  Email postedBy;
+  TimeStamp postedAt;
+  String body;
+};
+
+struct AppState {
+  ServerConfig server;
+  Vector<String> users;
+  Vector<AppMessage> messages;
 };
 
 };
