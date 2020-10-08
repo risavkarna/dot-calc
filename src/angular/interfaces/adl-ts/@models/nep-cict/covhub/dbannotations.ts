@@ -1,6 +1,6 @@
 /* @generated from adl module covhub.dbannotations */
 
-import * as ADL from './../runtime/adl';
+import * as ADL from './../meta/adl';
 
 export interface DbTable {
   tableName: string;

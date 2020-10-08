@@ -1,6 +1,6 @@
 /* @generated from adl module covdb.twod */
 
-import * as ADL from './../runtime/adl';
+import * as ADL from './../meta/adl';
 
 export interface Position {
   xLat: number;
