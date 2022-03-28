@@ -61,7 +61,7 @@
     "idris-lv03": "^0.3.0",
     "idris-naps": "^0.3.0",
     "idris-polygons-to-lines": "^1.1.0",
-    "minimist": "^1.2.5",
+    "minimist": "^1.2.6",
     "moment": "^2.29.0",
     "node-gyp": "^7.1.0",
     "ref-napi": "^3.0.1",
